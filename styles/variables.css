@@ -1,0 +1,20 @@
+/* Variables */
+:root {
+    --primary-color: #1e88e5;
+    --primary-dark: #1565c0;
+    --primary-light: #64b5f6;
+    --secondary-color: #26a69a;
+    --secondary-color-light: #bd8c65; /* Couleur de fond pour la section Une année riche */
+    --accent-color: #ff9800;
+    --text-color: #333;
+    --text-light: #757575;
+    --bg-color: #fff;
+    --bg-light: #f5f7fa;
+    --bg-dark: #263238;
+    --success-color: #4caf50;
+    --error-color: #f44336;
+    --border-radius: 4px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --box-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
+    --transition: all 0.3s ease;
+}

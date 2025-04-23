@@ -1,0 +1,399 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/1.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Objective Display */
+.objective {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.objective h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.progress-container {
+    margin-bottom: 25px;
+}
+
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.progress-bar {
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 50px;
+}
+
+
+/* New Hero Puits Section */
+.hero-puits {
+    color: var(--text-color);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 50px; /* Espace pour le séparateur ondulé */
+}
+
+/* Hero Top Part */
+.hero-top {
+    background: linear-gradient(180deg, #64b5f6 0%, #a8ddff 100%);
+    padding: 80px 0 0;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -2px;
+    text-align: center;
+}
+
+.hero-top .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--bg-dark);
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.objective-circle {
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(135deg, #42c3f7 0%, var(--primary-color) 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.objective-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 600;
+}
+
+.objective-number {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin: 5px 0;
+}
+
+.objective-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.progress-container {
+    width: 100%;
+    position: relative;
+    z-index: 20;
+}
+
+.stats-text {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.progress-stat {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.progress-bar {
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    border-radius: 50px;
+}
+
+.puits-illustration-top {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 5;
+}
+
+.puits-img-top {
+    object-fit: contain;
+    max-width: 100%;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Hero Separator */
+.hero-separator {
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, #8BC34A 30%, #795548 100%);
+    position: relative;
+    z-index: 5;
+    margin-bottom: -2px;
+    width: 100%;
+}
+
+.hero-separator::before {
+    content: '';
+    position: absolute;
+    top: -20px; /* Position légèrement au-dessus du séparateur */
+    left: 0;
+    width: 100%;
+    height: 100px; /* Hauteur ajustée à l'image */
+    background-image: url('../images/herb.png');
+    background-repeat: repeat-x;
+    background-size: auto 30px; /* Taille ajustée pour l'herbe */
+    z-index: 20; /* S'assurer qu'il est au-dessus des autres éléments */
+} 
+
+/* Hero Bottom Part */
+.hero-bottom {
+    background: linear-gradient(180deg, #e6c29f 0%, #bd8c65 100%);
+    padding: 0 0 40px;
+    position: relative;
+    width: 100%;
+}
+
+.hero-bottom .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.puits-illustration-bottom {
+    position: relative;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/puits-bas.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    margin-top: -2px;
+    width: 100%;
+}
+
+.puits-img-bottom {
+    height: 600px;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.layer-labels {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.layer-label {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.layer-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+.layer-line {
+    height: 2px;
+    background-color: #e74c3c;
+    flex-grow: 1;
+    margin-right: 8px;
+}
+
+.layer-text {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--bg-dark);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 4px 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    white-space: nowrap;
+}
+
+.hero-bottom-content {
+    padding: 40px;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 80px;
+}
+
+.hero-bottom-content h2 {
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-bottom-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-bottom: 2rem;
+}
+
+/* Style pour le séparateur ondulé */
+.wave-separator {
+    position: relative;
+    height: 120px;
+    width: 100%;
+    background: url('../images/wave-separator-bottom.svg') no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    margin-top: -50px;
+    z-index: 10;
+}
+
+/* Media Queries pour responsive */
+@media screen and (max-width: 1000px) {
+    /* Masquer les illustrations de puits sur petits écrans */
+    .puits-illustration-top,
+    .puits-illustration-bottom {
+        display: none !important;
+    }
+    
+    /* Adapter la grille pour utiliser toute la largeur */
+    .hero-top .container,
+    .hero-bottom .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    /* Centrer le contenu sur petits écrans */
+    .hero-content {
+        text-align: center;
+    }
+    
+    /* Ajuster les marges pour le contenu */
+    .hero-bottom-content {
+        margin-top: 40px;
+    }
+    
+    /* Centrer le cercle d'objectif */
+    .objective-circle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Media Queries pour très petits écrans */
+@media screen and (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-bottom-content h2 {
+        font-size: 1.8rem;
+    }
+}
